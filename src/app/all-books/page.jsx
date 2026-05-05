@@ -3,7 +3,7 @@ import SearchFilter from '@/components/SearchFilter';
 
 const AllBooksPage = async ({ searchParams }) => {
   const { category, search } = await searchParams;
-  const res = await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/data.json`);
+  const res = await fetch('http://localhost:3000/data.json');
   const books = await res.json();
 
   let filteredBooks = books;
