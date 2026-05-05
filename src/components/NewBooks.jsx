@@ -7,7 +7,7 @@ const NewBooks = () => {
 
   useEffect(() => {
     const fetchBooks = async () => {
-      const res = await fetch('http://localhost:3000/data.json');
+      const res = await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/data.json`);
       const data = await res.json();
       setBooks(data.slice(0, -4));
     };
