@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "description": "A young Andalusian shepherd named Santiago embarks on a journey across the Egyptian desert in search of a treasure buried near the Pyramids. The story is a timeless allegory about following your dreams and trusting that the universe conspires to help those who pursue their true purpose.",
+    "category": "Story",
+    "available_quantity": 42,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780062315007-L.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Siddhartha",
+    "author": "Hermann Hesse",
+    "description": "A young Indian Brahmin abandons privilege and tradition to seek ultimate truth, wandering through asceticism, sensual pleasure, and material wealth before finding peace as a simple ferryman beside a river. Hesse's Nobel Prize-winning masterpiece is perhaps the most profound spiritual novel of the 20th century.",
+    "category": "Story",
+    "available_quantity": 33,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780553208849-L.jpg"
+  },
+  {
+    "id": 3,
+    "title": "The Kite Runner",
+    "author": "Khaled Hosseini",
+    "description": "A heartbreaking story of friendship, betrayal, and the lifelong quest for redemption, set against the devastating backdrop of Afghanistan's fall from peace to Soviet invasion and Taliban rule. Hosseini's debut novel is both a deeply personal tale and a sweeping portrait of a country torn apart.",
+    "category": "Story",
+    "available_quantity": 27,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9781594480003-L.jpg"
+  },
+  {
+    "id": 4,
+    "title": "The Prophet",
+    "author": "Kahlil Gibran",
+    "description": "On the eve of his departure from a beloved city, the prophet Almustafa is asked by the people to share his wisdom on love, marriage, work, joy, sorrow, death, and the full spectrum of human experience. Published in 1923, this collection of poetic essays has been translated into over 100 languages and never gone out of print.",
+    "category": "Story",
+    "available_quantity": 38,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780394404288-L.jpg"
+  },
+  {
+    "id": 5,
+    "title": "One Hundred Years of Solitude",
+    "author": "Gabriel García Márquez",
+    "description": "This Nobel Prize-winning masterpiece traces seven generations of the Buendía family in the mythical town of Macondo, where the miraculous and the mundane exist side by side with total ease. García Márquez essentially invented magical realism as a literary form and produced what many consider the greatest novel ever written in the Spanish language.",
+    "category": "Story",
+    "available_quantity": 22,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780060883287-L.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Life of Pi",
+    "author": "Yann Martel",
+    "description": "After a cargo ship sinks in the Pacific Ocean, a sixteen-year-old Indian boy named Pi finds himself stranded on a lifeboat with a 450-pound Bengal tiger named Richard Parker. Martel's Booker Prize-winning novel is simultaneously a thrilling survival story, a meditation on faith, and a profound question about the stories we tell ourselves.",
+    "category": "Story",
+    "available_quantity": 31,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780156027328-L.jpg"
+  },
+  {
+    "id": 7,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "description": "The mysterious and fabulously wealthy Jay Gatsby throws lavish parties every weekend at his Long Island mansion, all in the hope of winning back the love of the beautiful Daisy Buchanan across the bay. F. Scott Fitzgerald's Jazz Age masterpiece is a dazzling and heartbreaking portrait of the American Dream and the hollow emptiness that often lies beneath it.",
+    "category": "Story",
+    "available_quantity": 45,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg"
+  },
+  {
+    "id": 8,
+    "title": "1984",
+    "author": "George Orwell",
+    "description": "In a totalitarian future where Big Brother watches every citizen and the government rewrites history to control the present, Winston Smith dares to think forbidden thoughts and fall in love. Orwell's chilling dystopian masterpiece gave the world words like doublethink and thought crime, and grows more relevant with every passing year.",
+    "category": "Story",
+    "available_quantity": 50,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg"
+  },
+  {
+    "id": 9,
+    "title": "The Old Man and the Sea",
+    "author": "Ernest Hemingway",
+    "description": "An aging Cuban fisherman rows far out into the Gulf Stream alone and hooks an enormous marlin, leading to an epic three-day battle of wills between man and fish. With the simplicity of a fable and the weight of a masterwork, this Pulitzer Prize-winning novella is Hemingway at the absolute peak of his craft.",
+    "category": "Story",
+    "available_quantity": 29,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780684801223-L.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Man's Search for Meaning",
+    "author": "Viktor E. Frankl",
+    "description": "Holocaust survivor and psychiatrist Viktor Frankl describes his harrowing experiences in Nazi concentration camps and the revolutionary theory of meaning he developed from them, arguing that our primary drive in life is not pleasure but the pursuit of purpose. This profound and life-altering book has sold over 16 million copies and changed the way the world thinks about suffering.",
+    "category": "Story",
+    "available_quantity": 36,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780807014271-L.jpg"
+  },
+  {
+    "id": 11,
+    "title": "The Little Prince",
+    "author": "Antoine de Saint-Exupéry",
+    "description": "A pilot stranded in the Sahara desert meets a small, serious prince from another planet who shares with him gentle and devastating truths about love, loneliness, and what truly matters in life. The most translated French novel in history, it is a book that reads differently at every stage of life.",
+    "category": "Story",
+    "available_quantity": 48,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780156012195-L.jpg"
+  },
+  {
+    "id": 12,
+    "title": "The Diary of a Young Girl",
+    "author": "Anne Frank",
+    "description": "Written while hiding from the Nazis in a secret Amsterdam annex for two years, Anne Frank's diary is one of the most moving, intimate, and important documents of the 20th century. Her voice, brilliant and full of hope even in the darkest circumstances, has spoken to millions of readers across every generation since its first publication in 1947.",
+    "category": "Story",
+    "available_quantity": 40,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780553296983-L.jpg"
+  }
+]
