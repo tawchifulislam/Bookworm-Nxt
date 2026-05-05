@@ -2,7 +2,7 @@
 import { authClient } from '@/lib/auth-client';
 import { useRouter } from 'next/navigation';
 
-export default function SignUpPage() {
+export default function RegisterPage() {
   const router = useRouter();
 
   const onSubmit = async e => {
@@ -29,7 +29,7 @@ export default function SignUpPage() {
       <div className="card bg-[#243b44] w-full max-w-112.5 shadow-[0_20px_50px_rgba(0,0,0,0.3)] border border-slate-700/50 rounded-2xl">
         <div className="card-body p-8 md:p-10">
           <h2 className="text-center text-4xl font-black text-amber-500 mb-8 tracking-tight">
-            Sign Up
+            Register
           </h2>
 
           <form onSubmit={onSubmit} className="space-y-5">

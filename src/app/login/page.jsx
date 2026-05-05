@@ -1,8 +1,9 @@
 'use client';
 import { authClient } from '@/lib/auth-client';
 import Link from 'next/link';
+import { GrGoogle } from 'react-icons/gr';
 
-export default function SignInPage() {
+export default function LoginPage() {
   const onSubmit = async e => {
     e.preventDefault();
 
@@ -18,9 +19,15 @@ export default function SignInPage() {
     console.log({ data, error });
   };
 
+  const handlGoogleSignIn = async () => {
+    await authClient.signIn.social({
+      provider: 'google',
+    });
+  };
+
   return (
     <div className="flex justify-center items-center min-h-[90vh] bg-[#1a2e35] px-4">
-      <div className="card bg-[#243b44] w-full max-w-[400px] shadow-[0_20px_50px_rgba(0,0,0,0.3)] border border-slate-700/50 rounded-2xl">
+      <div className="card bg-[#243b44] w-full max-w-100 shadow-[0_20px_50px_rgba(0,0,0,0.3)] border border-slate-700/50 rounded-2xl">
         <div className="card-body p-10">
           <h1 className="text-center text-4xl font-black text-amber-500 mb-10 tracking-tight">
             Login
@@ -69,7 +76,14 @@ export default function SignInPage() {
             OR
           </div>
 
-          <p className="text-center text-sm text-slate-300">
+          <button
+            onClick={handlGoogleSignIn}
+            className="btn h-12 btn-outline border-slate-600 text-slate-200 hover:bg-slate-700 hover:border-slate-700 w-full gap-3 font-bold rounded-lg transition-all active:scale-95"
+          >
+            <GrGoogle className="text-xl text-amber-500" /> Login with Google
+          </button>
+
+          <p className="text-center text-sm text-slate-400 mt-8">
             New here?{' '}
             <Link
               href="/register"
