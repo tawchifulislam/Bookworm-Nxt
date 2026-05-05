@@ -1,8 +1,16 @@
 'use client';
+import { authClient } from '@/lib/auth-client';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const Navbar = () => {
+  const userData = authClient.useSession();
+  const user = userData.data?.user;
+  console.log(user);
+
+  const handleLogout = () => {
+    authClient.signOut();
+  };
   return (
     <div className="bg-[#1a2e35] border-b border-slate-700 sticky top-0 z-50">
       <nav className="navbar max-w-7xl mx-auto px-2 md:px-6">
@@ -90,12 +98,44 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end">
-          <Link
-            href="/login"
-            className="btn btn-sm bg-amber-600 hover:bg-amber-700 border-none text-white px-5 sm:px-6"
-          >
-            Login
-          </Link>
+          {!user && (
+            <Link
+              href="/login"
+              className="btn btn-sm bg-amber-600 hover:bg-amber-700 border-none text-white px-5 sm:px-6"
+            >
+              Login
+            </Link>
+          )}
+
+          {user && (
+            <div className="flex items-center gap-4">
+              <div className="avatar placeholder">
+                <div className="ring-amber-500 ring-offset-[#1a2e35] w-10 rounded-full ring-2 ring-offset-2 overflow-hidden bg-amber-600 text-white">
+                  {user?.image ? (
+                    <Image
+                      src={user.image}
+                      alt={user.name}
+                      referrerPolicy="no-referrer"
+                      width={40}
+                      height={40}
+                      className="h-full w-full object-cover"
+                    />
+                  ) : (
+                    <span className="text-xl font-bold">
+                      {user?.name?.charAt(0) || 'U'}
+                    </span>
+                  )}
+                </div>
+              </div>
+
+              <button
+                className="btn btn-sm bg-amber-600 hover:bg-amber-700 border-none text-white px-5 sm:px-6"
+                onClick={handleLogout}
+              >
+                Logout
+              </button>
+            </div>
+          )}
         </div>
       </nav>
     </div>
