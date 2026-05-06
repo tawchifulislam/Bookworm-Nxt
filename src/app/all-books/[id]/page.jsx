@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const BookDetailsPage = async ({ params }) => {
   const { id } = await params;
-  const res = await fetch('http://localhost:3000/data.json', {
+  const res = await fetch('https://bookworm-orpin.vercel.app/data.json', {
     cache: 'no-store',
   });
   const books = await res.json();

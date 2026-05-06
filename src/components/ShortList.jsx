@@ -1,7 +1,7 @@
 import BooksCard from '@/components/BooksCard';
 
 const ShortList = async () => {
-  const res = await fetch('http://localhost:3000/data.json', {
+  const res = await fetch('https://bookworm-orpin.vercel.app/data.json', {
     cache: 'no-store',
   });
   const books = await res.json();
