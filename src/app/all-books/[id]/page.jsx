@@ -2,7 +2,9 @@ import Image from 'next/image';
 
 const BookDetailsPage = async ({ params }) => {
   const { id } = await params;
-  const res = await fetch('http://localhost:3000/data.json');
+  const res = await fetch('http://localhost:3000/data.json', {
+    cache: 'no-store',
+  });
   const books = await res.json();
   const book = books.find(book => book.id == id);
 

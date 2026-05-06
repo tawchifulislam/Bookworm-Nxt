@@ -1,7 +1,9 @@
 import BooksCard from './BooksCard';
 
 const FeaturedBooks = async () => {
-  const res = await fetch('http://localhost:3000/data.json');
+  const res = await fetch('http://localhost:3000/data.json', {
+    cache: 'no-store',
+  });
   const books = await res.json();
   const topBooks = books.slice(0, 4);
 

@@ -7,7 +7,9 @@ const NewBooks = () => {
 
   useEffect(() => {
     const fetchBooks = async () => {
-      const res = await fetch('http://localhost:3000/data.json');
+      const res = await fetch('http://localhost:3000/data.json', {
+        cache: 'no-store',
+      });
       const data = await res.json();
       setBooks(data.slice(0, -4));
     };
